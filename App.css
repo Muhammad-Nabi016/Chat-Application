@@ -318,3 +318,23 @@
         max-width: 90%;
     }
 }
+
+/* Active Chat Room Highlight */
+.room-item.selected-room {
+    background: #dcfce7;
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.15);
+}
+
+.room-item.selected-room h3 {
+    color: #15803d;
+    font-weight: 700;
+}
+
+.room-item.selected-room button {
+    background: #16a34a;
+}
+
+.room-item.selected-room button:hover {
+    background: #15803d;
+}
