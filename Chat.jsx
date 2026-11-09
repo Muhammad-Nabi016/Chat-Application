@@ -195,7 +195,12 @@ function Chat() {
                     ) : (
                         <div className="rooms-list">
                             {rooms.map((room) => (
-                                <div className="room-item" key={room._id}>
+                                <div
+                                    className={`room-item ${
+                                        selectedRoom?._id === room._id ? "selected-room" : ""
+                                        }`}
+                                        key={room._id}
+                                >
                                     <div>
                                         <h3>{room.name}</h3>
                                         <small>
